@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Main landing page of the Test Websites V2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Poppins&display=swap" rel="stylesheet">
+
+
+
+  <!-- Styles CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <nav class="navbarcontainer">
+    <div class="navbarlogo">
+      <img id="logo" src="images/1.png" alt="">
+    </div>
+    <div class="navbarlinks">
+      <ul class="navbarlinksul">
+        <li>Home</li>
+        <li>Simple Projects</li>
+        <li>JS Projects</li>
+        <li>About</li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section1 about-me">
+      <div class="about-me-container">
+        <div class="about-me-col1">
+          <img id="rustam-img" src="images/rustam.jpg" alt="">
+        </div>
+        <div class="about-me-col2">
+          <h1 class="h1boxshadow" contenteditable="true">text 1</h1>
+          <h2>My journey into Web Designing</h2>
+          <h3>text 3</h3>
+        </div>
+      </div>
+    </section>
+
+
+    <br>
+
+
+    <section class="bannersection">
+      <h2>Simple HTML and CSS Projects</h2>
+      <small>All ideas for these projects are taken from <a target="_blank" href="https://www.geeksforgeeks.org/top-10-projects-for-beginners-to-practice-html-and-css-skills/">here!</a> </small>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img class="bannerimg" src="images/cv.jpg">
+          <button class="bannerbtn" type="button" name="button" onClick="parent.open(href='projects/basic_projects/cv/index_mycv.html')">More</button>
+          <div class="text">
+            <h1>My CV</h1>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <img class="bannerimg" src="images/form.jpg">
+          <button class="bannerbtn" type="button" name="button" onClick="parent.open(href='projects/basic_projects/signupform/index_signupform.html')">More</button>
+          <div class="text">
+            <h1>Signup Form</h1>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <img class="bannerimg" src="images/parallax.jpg">
+          <button class="bannerbtn" type="button" name="button" onClick="parent.open(href='/projects/basic_projects/parallax/index_parallax.html')">More</button>
+
+          <div class="text">
+            <h1>Parallax</h1>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <img class="bannerimg" src="images/landing_page.jpg">
+          <button class="bannerbtn" type="button" name="button" onClick="parent.open(href='/projects/basic_projects/landingpage/index_landing_page.html')">More</button>
+
+          <div class="text"><H1>Landing Page</H1></div>
+        </div>
+
+        <div class="mySlides fade">
+          <img class="bannerimg" src="images/restaurant.jpg">
+          <button class="bannerbtn" type="button" name="button" onClick="parent.open(href='/projects/basic_projects/restaurant/index_restaurant.html')">More</button>
+
+          <div class="text"><h1>Restaurant</h1></div>
+        </div>
+
+        <div class="mySlides fade">
+          <img class="bannerimg" src="images/event_page.jpg">
+          <button class="bannerbtn" type="button" name="button" onClick="parent.open(href='/projects/basic_projects/event/index_event.html')">More</button>
+
+          <div class="text"><h1>Conference page</h1></div>
+        </div>
+
+        <div class="mySlides fade">
+          <img class="bannerimg" src="images/mytunes.jpg">
+          <button class="bannerbtn" type="button" name="button" onClick="parent.open(href='/projects/basic_projects/mytunes/index_mytunes.html')">More</button>
+
+          <div class="text"><h1>My Tunes</h1></div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+
+      </div>
+      <br>
+    </section>
+
+
+    <br>
+
+
+    <section class="testsection">
+      <div class="testcontainer">
+        <div class="testtext">
+          <h2>Simple JavaScript Projects</h2>
+        </div>
+        <div class="testcol1 testcol" id="js1">
+          <img class="testimg" src="images/jscounter.jpg" alt="">
+          <h2>Counter</h2>
+          <p>The Project is based on a simple JavaScript code that "increments", "decrements" and "resents" counter.</p>
+          <button class="testbtn" type="button" name="button" onClick="parent.open(href='projects/js_projects/counter/index_js_counter.html')">More</button>
+        </div>
+
+        <div class="testcol2 testcol" id="js2">
+          <img class="testimg" src="images/jscalc.jpg" alt="">
+          <h2>Calculator</h2>
+          <p>This Project is mainly based on the "onClick()" function. The layout is based on the iOS Calculator.</p>
+          <button class="testbtn" type="button" name="button" onClick="parent.open(href='projects/js_projects/calc/index_js_calc.html')">More</button>
+        </div>
+
+        <div class="testcol3 testcol" id="js3">
+          <img class="testimg" src="images/jsform.jpg" alt="">
+          <h2>Form Validation</h2>
+          <p>This Project uses JavaScript "conditions" to ensure validation of data specific fields based on data type.</p>
+          <button class="testbtn" type="button" name="button" onClick="parent.open(href='projects/js_projects/fvalidation/index_js_form_validation.html')">More</button>
+        </div>
+
+        <div class="testcol4 testcol" id="js4">
+          <img class="testimg" src="images/jstodolist.jpg" alt="">
+          <h2>Todo List</h2>
+          <p>This Project includes OpenWeather API, "add", "done" and "delete" functionality with "onClick" and "keyPress".</p>
+          <button class="testbtn" type="button" name="button" onClick="parent.open(href='/projects/js_projects/todolist/index_js_todo_list.html')">More</button>
+        </div>
+      </div>
+    </section>
+    <br>
+  </main>
+
+  <footer>
+    <h2>SOME TEXT HERE</h2>
+  </footer>
+
+  <script type="text/javascript" src="index.js"></script>
+
+</body>
+
+</html>

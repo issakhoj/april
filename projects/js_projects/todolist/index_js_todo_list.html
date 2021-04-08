@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Todo List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <!-- Styles CSS -->
+  <link rel="stylesheet" href="/projects/js_projects/todolist/styles_js_todo_list.css">
+</head>
+
+<body>
+  <div class="container">
+
+
+    <!------------------------------------------------------------------------------ THIS IS TOP PART ---------------------------------------------------------------------------  -->
+
+    <div class="title">
+
+      <div class="col1">
+        <div class="name">
+          <h1>Rustam <br> Issakhojayev</h1>
+        </div>
+        <small id="quote">Have a wonderful day!</small>
+      </div>
+
+      <div class="col2">
+
+        <div class="weather">
+          <small id="icon"></small>
+          <span>
+            <h2 id="temp">Temp</h2>
+            <h2>°С</h2>
+          </span>
+          <h4 id="location">location</h4>
+        </div>
+
+        <div class="date">
+          <img id="timeloading" src="/projects/js_projects/todolist/images/timeload.gif" alt="Time is loading!">
+          <h2 id="time"></h2>
+          <h3 id="date"></h3>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!------------------------------------------------------------------------------ TODO ITEMS ADD ---------------------------------------------------------------------------  -->
+    <div id="todo_input" class="hide">
+      <div class="task_list">
+        <form action="#">
+          <input type="text" name="task" id="task" placeholder="Add new task" required>
+          <button id="btnClose" class="btn-toggle" type="button" name="button" onclick="closeAdd()">&times;</button>
+          <button id="btnAdd" class="hide btn-toggle" type="button" name="button" onclick="addToList()">&#10003;</button>
+        </form>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------ TODO ITEMS DISPLAY ---------------------------------------------------------------------------  -->
+    <div class="mytodo">
+      <div id="tasklist" class="task_list">
+        <span id="tasklisttext">Things to get done</span>
+        <button id="hidetoggle" class="btn-toggle" type="button" name="button" onclick="hide()">&#x2B;</button>
+      </div>
+
+      <div id="mytodo">
+        <ul id="list">
+          <li>test</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------------------------------------------------------ FOOTER ---------------------------------------------------------------------------  -->
+</body>
+<footer class="bottom-container">
+  <h4><i>Copyright @ Rustam Issakhojayev</i></h4>
+</footer>
+
+
+
+<script src="/projects/js_projects/todolist/index_js_todo_list.js" charset="utf-8"></script>
+
+</html>

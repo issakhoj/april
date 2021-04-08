@@ -1,0 +1,249 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #eee;
+  display: grid;
+  font-family: 'Roboto', sans-serif;
+}
+
+.original-idea {
+  display: grid;
+  background-color: black;
+  height: 40px;
+  align-items: center;
+  /* width: auto; */
+  padding: 5px 25px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.original-idea h1 {
+  font-size: 1.3rem;
+  margin: 0;
+  color: white;
+}
+
+header {
+  background-color: #333333;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 15px 20px;
+  list-style: none;
+}
+
+li:hover {
+  background-color: #252529;
+}
+
+.section {
+  display: grid;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.section1 {
+  background-image: url("/projects/basic_projects/mytunes/images/showcase.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-color: #cccccc;
+  background-position: center;
+}
+
+.section1-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  width: 90%;
+}
+
+.section1-text h1 {
+  font-size: 4rem;
+}
+
+.section1-text h2,
+.section2-text h2,
+.section3-text h2,
+.section4-text h2 {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+.section1-text h3 {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.section2 {
+  background-color: #252529;
+  height: auto;
+  padding-bottom: 2rem;
+}
+
+.section2-text {
+  padding: 2.5rem;
+  max-width: 80%;
+  margin: auto;
+}
+
+.section2-text h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.section2-text h3,
+.section3-text h3,
+.section4-text h3 {
+  font-size: 1.35rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+#section2-img {
+  width: 80vw;
+  margin: auto;
+}
+
+.section2-btn {
+  background-color: #b90415;
+  color: #f9debc;
+  padding: 20px;
+  border: none;
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.section3 {
+  height: auto;
+  padding-bottom: 2rem;
+  background-color: #f4f4f4;
+}
+
+.section3-text {
+  padding: 2.5rem;
+  max-width: 80%;
+  margin: auto;
+  color: black;
+}
+
+.section3-btn {
+  background-color: #103063;
+  color: #f9debc;
+  padding: 20px;
+  border: none;
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.section4 {
+  background-image: url("/projects/basic_projects/mytunes/images/section-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  background-color: #cccccc;
+  background-position: bottom;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 150px 0;
+}
+
+.section4-text {
+  color: white;
+  width: 80%;
+  margin: auto;
+}
+
+#section5-img {
+  width: 80%;
+}
+
+.section5 {
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  width: 80%;
+  color: black;
+  text-align: left;
+  margin-top: 20px;
+  padding: 1rem;
+}
+
+.section5 a {
+  color: black;
+}
+
+.cards {
+  box-sizing: border-box;
+  background-color: #252529;
+  margin: auto;
+  width: 100%;
+  padding: 40px 20%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: auto;
+  /* justify-content: space-around; */
+  grid-gap: 50px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+  min-width: 180px;
+  min-height: 170px;
+}
+
+.cards ul {
+  display: block;
+  width: auto;
+}
+
+.cards li {
+  margin: 0;
+  padding: 0;
+}
+
+.cards a {
+  color: #aebfc6;
+  font-size: 1rem;
+}
+
+.cards hr {
+  border-color: #aebfc6;
+  border-width: 0.5px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.footer-copy-right {
+  display: grid;
+  width: 100%;
+  background-color: #333333;
+  justify-content: center;
+  box-sizing: border-box;
+  font-weight: normal;
+  font-size: 1rem;
+  padding: 20px;
+}

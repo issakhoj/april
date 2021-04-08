@@ -1,0 +1,449 @@
+body {
+  padding-top: 3%;
+  background-color: #ffd9b0;
+  color: #999999;
+  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0;
+  }
+
+P {
+  font-size: 2rem;
+  color: black;
+}
+
+h2 {
+  color: white;
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+option {
+  color: black;
+  font-size: 0.8rem;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 600px 400px;
+  justify-content: center;
+}
+
+.col1 {
+  width: 600px;
+  height: 600px;
+  background-image: url("/projects/basic_projects/signupform/images/form.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px 0 0 15px;
+
+}
+
+.col2 {
+  padding: 50px;
+  width: 300px;
+  height: 500px;
+  background-color: #111;
+  border-radius: 0 15px 15px 0;
+}
+
+input::-webkit-calendar-picker-indicator {
+  opacity: 0.6;
+  filter: invert(0.8);
+}
+
+
+
+.label-radio {
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.form-input {
+  padding-top: 21px;
+}
+
+.form-label {
+  position: absolute;
+  transition: 0.25s ease;
+  -moz-transition: 0.25s ease;
+  -webkit-transition: 0.25s ease;
+  -o-transition: 0.25s ease;
+  -ms-transition: 0.25s ease;
+  color: #bebebe;
+  left: 0;
+  top: 23px;
+}
+
+input {
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  padding-top: 10px;
+  -webkit-appearance: none;
+}
+
+input:focus+.form-label, input:valid+.form-label {
+  top: 1px;
+  font-size: 11px;
+  color: #edb77d;
+}
+
+input, select {
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  border: none;
+  font-family: Poppins;
+  color: #fff;
+  background: transparent;
+  border-bottom: 1px solid #999;
+  padding: 4px 0;
+}
+
+input:focus, select:focus {
+  border-bottom: 1px solid #edb77d;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px transparent inset;
+}
+
+input::-webkit-input-placeholder {
+  color: #bebebe;
+}
+
+input::-moz-placeholder {
+  color: #bebebe;
+}
+
+input:-ms-input-placeholder {
+  color: #bebebe;
+}
+
+input:-moz-placeholder {
+  color: #bebebe;
+}
+
+/* Radio buttons */
+input[type=radio] {
+  appearance: radio !important;
+  -moz-appearance: radio !important;
+  -webkit-appearance: radio !important;
+  -o-appearance: radio !important;
+  -ms-appearance: radio !important;
+}
+
+.form-radio {
+  margin-bottom: 65px;
+  padding-top: 20px;
+}
+
+.form-radio input {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -9999px;
+}
+
+.form-radio label {
+  padding-top: 4px;
+}
+
+.form-radio input+label {
+  margin: 0 3px;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  border: solid 2px #ebebeb;
+  background-color: #FFF;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  transition: border-color .15s ease-out, color .25s ease-out, background-color .15s ease-out, box-shadow .15s ease-out;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+}
+
+.form-radio input:checked+label {
+  background-color: #111;
+  color: #FFF;
+  border-color: #111;
+  z-index: 1;
+}
+
+.form-radio input:focus+label {
+  outline: none;
+}
+
+.form-radio input:hover {
+  background-color: #111;
+  color: #FFF;
+  border-color: #111;
+}
+
+.radio-item-list {
+  margin: 0 -3px;
+}
+
+.active {
+  position: relative;
+  background: #edb77d;
+  padding: 10px 1px;
+  margin-right: 7px;
+  margin-left: 3px;
+  border-radius: 24px;
+  -moz-border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -o-border-radius: 24px;
+  -ms-border-radius: 24px;
+}
+
+.active:after {
+  position: absolute;
+  content: 'Person';
+  right: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  font-size: 11px;
+  color: #222;
+  font-weight: bold;
+}
+
+.active input+label {
+  margin-right: 59px;
+}
+
+.label-radio {
+  display: block;
+  margin-bottom: 18px;
+}
+
+/* Radio buttons end red */
+/* Button */
+.btn-submit {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.btn {
+  width: 200px;
+  background: #f7c086;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin-top: 30px;
+  align: center;
+}
+
+.btn:hover {
+  background: #f7c086;
+  text-decoration: none;
+}
+
+/* Button end */
+.vertify-booking {
+  text-decoration: none;
+  color: #f7c086;
+  font-size: 0.8rem;
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* Test */
+html {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.btn-switch {
+  font-size: 6em;
+  position: relative;
+  display: inline-block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn-switch__radio {
+  display: none;
+}
+
+.btn-switch__label {
+  display: inline-block;
+  padding: .75em .5em .75em .75em;
+  vertical-align: top;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #666;
+  cursor: pointer;
+  transition: color .2s ease-in-out;
+}
+
+.btn-switch__label+.btn-switch__label {
+  padding-right: .75em;
+  padding-left: 0;
+}
+
+.btn-switch__txt {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  min-width: 1.5em;
+  opacity: 1;
+  pointer-events: none;
+  transition: opacity .2s ease-in-out;
+}
+
+.btn-switch__radio_no:checked~.btn-switch__label_yes .btn-switch__txt,
+.btn-switch__radio_yes:checked~.btn-switch__label_no .btn-switch__txt {
+  opacity: 0;
+}
+
+.btn-switch__label:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: grey;
+  border-radius: 1.5em;
+  box-shadow: inset 0 .0715em .3572em rgba(43, 43, 43, .05);
+  transition: background .2s ease-in-out;
+}
+
+.btn-switch__radio_yes:checked~.btn-switch__label:before {
+  background: green;
+}
+
+.btn-switch__label_no:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: .5em;
+  bottom: .5em;
+  left: .5em;
+  width: 2em;
+  background: white;
+  border-radius: 1em;
+  pointer-events: none;
+  box-shadow: 0 .1429em .2143em rgba(43, 43, 43, .2), 0 .3572em .3572em rgba(43, 43, 43, .1);
+  transition: left .2s ease-in-out, background .2s ease-in-out;
+}
+
+.btn-switch__radio_yes:checked~.btn-switch__label_no:after {
+  /*left: calc(100% - 2.5em);*/
+  background: none;
+  border: 2px solid red;
+}
+
+.btn-switch__radio_no:checked~.btn-switch__label_yes:before,
+.btn-switch__radio_yes:checked~.btn-switch__label_no:before {
+  z-index: 1;
+}
+
+.btn-switch__radio_yes:checked~.btn-switch__label_yes {
+  color: #fff;
+}
+
+/* test end */
+/* @media  Small Screen*/
+@media screen and (max-width: 800px) {
+h2{
+  font-size: 1rem;
+}
+  .main-container {
+    display: grid;
+    grid-template-columns: 90vw;
+    grid-template-rows: 1fr auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid red;
+  }
+
+  .col1, .col2 {
+    display: grid;
+    max-width: 100%;
+    width: auto;
+  }
+
+  .col1 {
+    grid-area: 2/1/3/2;
+    border-radius: 0 0 15px 15px;
+    border: 3px solid green;
+    max-height: 40vh;
+  }
+
+  .col2 {
+    grid-area: 1/1/2/2;
+    border-radius: 15px 15px 0 0;
+    border: 3px solid blue;
+  }
+
+  a{
+    margin: 0 -25px;
+  }
+
+  .radio-item-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 50px;
+  justify-content: end;
+  }
+
+
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 1024px) and (min-width: 801px) {
+
+  .main-container {
+    grid-template-columns: 500px 400px;
+      }
+
+  .col1 {
+    height: 550px;
+  }
+
+  .col2 {
+    padding: 25px;
+
+  }
+}

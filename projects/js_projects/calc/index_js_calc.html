@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Calculator Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Styles CSS -->
+  <link rel="stylesheet" href="/projects/js_projects/calc/styles_js_calc.css">
+</head>
+
+<body>
+  <div class="title-container">
+
+  <h1>JavaScript Calculator</h1>
+</div>
+
+  <div class="grid-container">
+    <div class="value-screen">
+    <input id="textarea" class="text-value" type="text" name="" value="">
+    </div>
+    <div class="top-rows">
+      <button id="reset" class="grid-item" type="button" name="button" onclick="reset()">AC</button>
+      <button class="grid-item" type="button" name="button" value="-1" onclick="toggle()">+/-</button>
+      <button class="grid-item" type="button" name="button" onclick="remove()"><</button>
+    </div>
+    <div class="bottom-rows">
+      <button class="grid-item" type="button" value="1" name="button" onclick="display(1)">1</button>
+      <button class="grid-item" type="button" value="2" name="button" onclick="display(2)">2</button>
+      <button class="grid-item" type="button" value="3" name="button" onclick="display(3)">3</button>
+      <button class="grid-item" type="button" value="4" name="button" onclick="display(4)">4</button>
+      <button class="grid-item" type="button" value="5" name="button" onclick="display(5)">5</button>
+      <button class="grid-item" type="button" value="6" name="button" onclick="display(6)">6</button>
+      <button class="grid-item" type="button" value="7" name="button" onclick="display(7)">7</button>
+      <button class="grid-item" type="button" value="8" name="button" onclick="display(8)">8</button>
+      <button class="grid-item" type="button" value="9" name="button" onclick="display(9)">9</button>
+      <button class="grid-item btn-0" type="button" value="0" name="button" onclick="display(0)">0</button>
+      <button class="grid-item btn-dot" type="button" value="." name="button" onclick="display('.')">.</button>
+    </div>
+    <div class="left-columns">
+      <button id="divide" class="grid-item" value="/" type="button" name="button" onclick="display('/')">/</button>
+      <button class="grid-item" type="button" value="*" name="button" onclick="display('*')">*</button>
+      <button class="grid-item" type="button" value="-" name="button" onclick="display('-')">-</button>
+      <button class="grid-item" type="button" value="+" name="button" onclick="display('+')">+</button>
+      <button class="grid-item" type="button" value="=" name="button" onclick="calculate()">=</button>
+    </div>
+  </div>
+</body>
+
+<script src="/projects/js_projects/calc/index_js_calc.js" charset="utf-8"></script>
+
+</html>

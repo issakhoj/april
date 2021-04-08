@@ -1,0 +1,409 @@
+:root{
+  --navcolor: grey;
+}
+
+*, html {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-color: tan;
+}
+
+
+main {
+  width: 960px;
+  margin: auto;
+  border: 1px solid var(--navcolor);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+
+h2{
+  font-size: 2rem;
+  margin: 0;
+  font-size: calc(1vw + 1vh + 1vmin);
+}
+
+p{
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+h3{
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.navbarcontainer {
+  background-color: var(--navcolor);
+  width: 960px;
+  height: 60px;
+  display: flex;
+  padding: 10px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.navbarlinksul{
+  display: flex;
+  float: right;
+  vertical-align: middle;
+  margin: 0;
+}
+
+li{
+  list-style: none;
+  padding: 10px;
+}
+
+.section1 {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e5eb;
+}
+
+/* .section1::before {
+  content: "";
+  background-image: url("../images/my_landing_page/dave-hoefler-lsoogGC_5dg-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.4;
+} */
+
+.about-me-col2 {
+  position: relative;
+  text-align: center;
+  padding: 1rem;
+}
+
+.about-me-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-content: center;
+  margin: auto;
+}
+
+#logo{
+  width: 50px;
+}
+
+#rustam-img {
+  width: 200px;
+  position: relative;
+  border-radius: 50%;
+  padding: 30px 30px;
+}
+
+
+/* @end images */
+.btn {
+  width: auto;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: 0.5s;
+  transition-timing-function: linear;
+}
+
+.btn:hover {
+  border-radius: 5%;
+  width: 150px;
+  height: 60px;
+  background-color: red;
+}
+
+footer {
+  background-color: var(--navcolor);
+  padding: 10px;
+  height: 60px;
+  display: grid;
+  align-content: center;
+  width: 960px;
+  margin: auto;
+}
+
+br{
+  line-height: 0;
+  font-size: 3px;
+  margin: 0;
+  padding: 0;
+}
+
+footer h1 {
+  font-size: 1rem;
+  font-size-adjust: auto;
+}
+
+.mySlides {
+  display: none;
+  height: 420px;
+
+}
+
+.bannersection {
+  background-color: #f3eac2;
+  padding-top: 1rem;
+}
+
+.bannerimg {
+  width: 550px;
+  height: 400px;
+  object-fit: cover;
+  object-position: top;
+  position: absolute;
+  right: 60px;
+  top: 20px;
+
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #f5b461;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(33, 66, 82, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 1.2rem;
+  padding: 8px 12px;
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  width: 280px;
+  height: 400px;
+  text-align: center;
+  display:grid;
+  align-content: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  border-radius: 50%;
+  display: inline-block;
+  padding-top: 10px;
+  transition: background-color 0.6s ease;
+  background: #f3eac2;
+  box-shadow: 5px 5px 11px #ada68a,
+    -5px -5px 11px #fffffa;
+}
+
+.dot:hover {
+  background-color: #d8ac9c;
+}
+
+.active {
+  background-color: #5eaaa8;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.bannerbtn{
+  background-color: #eb5e0b;
+  color: #f7f7e8;
+  padding: 0.5rem 1rem;
+  position: relative;
+  z-index: 6;
+  bottom: -87%;
+  right: -15%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  border: none;
+}
+
+
+.testcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-gap: 15px; */
+  grid-row-gap: 15px;
+  padding: 1rem;
+  background-color: #cfdac8;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.testtext {
+  grid-area: 1/1/2/4;
+
+}
+
+.testcol {
+  width: 280px;
+  padding: 1rem;
+  background-color: #30475e;
+  color: #dff2f5;
+  border-radius: 5px;
+  margin: auto;
+
+}
+
+img.testimg {
+  width: 235px;
+  height: 150px;
+  margin: auto;
+  padding: 1px;
+  border-radius: 5px;
+}
+
+.testbtn {
+  background-color: #eb5e0b;
+  color: #f7f7e8;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  border: none;
+}
+
+@media only screen and (max-width: 960px) {
+  main, footer, .navbarcontainer, .bannersection, .testsection  {
+    min-width: 550px;
+    width: auto;
+  }
+
+  .section1 {
+    height: 200px;
+  }
+
+  .testcontainer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .testtext {
+    grid-area: 1/1/2/3;
+  }
+
+  .testcol {
+    width: 250px;
+  }
+
+
+  img.testimg {
+    width: 220px;
+  }
+
+  .bannerimg {
+    display: block;
+    width: 530px;
+    left:10%;
+    right: 10%;
+    margin: auto;
+  }
+
+  .text {
+    top: 300px;
+    left: 25%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  p{
+    font-size: 0.8rem;
+  }
+
+
+
+
+
+
+
+
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {
+    font-size: 11px
+  }
+}

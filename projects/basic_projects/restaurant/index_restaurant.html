@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Restaurant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS Style -->
+  <link rel="stylesheet" href="/projects/basic_projects/restaurant/styles_restaurant.css">
+</head>
+
+<body>
+  <nav class="menu">
+    <button aria-expanded="false" aria-controls="menu-list">
+      <span class="open">☰</span>
+      <span class="close">×</span>
+      Menu
+    </button>
+    <ul id="menu-list">
+      <li><a href="">Tacos</a></li>
+      <li><a href="">Beers</a></li>
+      <li><a href="">Wines</a></li>
+      <li><a href="">Desserts</a></li>
+      <li><a href="">Reservations</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="section section2">
+      <div class="col1">
+        <h2 id="main-h2">Terry's Taco Joint</h2>
+        <br>
+        <h3 id="main-h3">Pretty Good Tacos!</h3>
+      </div>
+      <div class="col2">
+        <div class="top">
+          <h2>$1.99</h2>
+          <h3>Tacos</h3>
+        </div>
+        <div class="bottom">
+          <h2>$3.99</h2>
+          <h3>Kombucha</h3>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="section section3">
+      <div class="card card1">
+        <span class="icon">🌮</span>
+        <h3>Tacos</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="card card2">
+        <span class="icon">🍺</span>
+        <h3>Beer</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="card card3">
+        <span class="icon">🍷</span>
+        <h3>Wine</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="card card4">
+        <span class="icon">🎵</span>
+        <h3>Music</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+    </div>
+
+
+    <div class="section section4">
+      <div class="taco-img">
+        <img src="/projects/basic_projects/restaurant/images/queso-taco.png" alt="">
+      </div>
+      <div class="taco-text">
+        <h2>Featured Taco</h2>
+        <h3>Slim Profile, easy to hold and loaded with cheese.</h3>
+        <h3>This is the one you have been waiting for.</h3>
+        <button class="btn btn-taco" type="button" name="button">Learn More →</button>
+      </div>
+    </div>
+    <!-- class="top" -->
+    <div class="section section5">
+      <div id="before">
+        <h2></h2>
+      </div>
+      <div id="middle">
+        <h2>IMAGES</h2>
+      </div>
+      <div id="after">
+        <h2></h2>
+      </div>
+      <div class="bottom">
+        <img src="https://source.unsplash.com/random/201x201" alt="">
+        <img src="https://source.unsplash.com/random/202x202" alt="">
+        <img src="https://source.unsplash.com/random/203x203" alt="">
+        <img src="https://source.unsplash.com/random/204x204" alt="">
+        <img src="https://source.unsplash.com/random/205x205" alt="">
+        <img src="https://source.unsplash.com/random/206x206" alt="">
+        <img class="hide800" src="https://source.unsplash.com/random/207x207" alt="">
+        <img class="hide800"  src="https://source.unsplash.com/random/208x208" alt="">
+        <img class="hide800"  src="https://source.unsplash.com/random/209x209" alt="">
+        <img class="hide800"  src="https://source.unsplash.com/random/210x210" alt="">
+        <img class="hide800"  src="https://source.unsplash.com/random/211x211" alt="">
+        <img class="hide800"  src="https://source.unsplash.com/random/212x212" alt="">
+      </div>
+    </div>
+
+  </main>
+  <h3>Original idea is taken from <a target="_blank" href="https://jolly-kalam-23776e.netlify.app/restaurantwebsite/">here!</a></h3>
+
+  <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({
+      target
+    }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+  </script>
+
+</body>
+
+</html>

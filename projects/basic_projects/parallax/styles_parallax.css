@@ -1,0 +1,115 @@
+body, html {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  color: #777;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  padding: 20px;
+  background-color: black;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+span{
+}
+
+div {
+    display: block;
+}
+
+.text {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  text-align: center;
+  align: center;
+}
+
+.text1 {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translate(0, -50%);
+  letter-spacing: 8px;
+  font-family: 'Lato', sans-serif;
+}
+
+#img1 {
+  background-image: url("/projects/basic_projects/parallax/images/image1.jpg");
+min-height: 90vh;
+}
+
+#img2 {
+  background-image: url("/projects/basic_projects/parallax/images/image2.jpg");
+  min-height: 40vh;
+}
+
+#img3 {
+  background-image: url("/projects/basic_projects/parallax/images/image3.jpg");
+  min-height: 40vh;
+}
+
+#img4 {
+  background-image: url("/projects/basic_projects/parallax/images/image1.jpg");
+  min-height: 90vh;
+}
+
+
+
+.section-white{
+  background-color: white;
+  text-align: center;
+  padding: 3rem;
+  color: black;
+}
+.section-color{
+  background-color: #282e34;
+  text-align: center;
+  padding: 3rem;
+  color: #ddd;
+}
+
+h2{
+  font-size: 1.5rem;
+}
+
+p{
+  margin: 2rem;
+  line-height: 1.8em;
+}
+
+
+/* @media  Small Screen*/
+@media screen and (max-width: 1024px) {
+  h1 {
+    padding: 20px;
+    font-weight: 400;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  h1, h2{
+    font-size: 2rem;
+  }
+
+  p{
+    margin: 0;
+    line-height: 1.5em;
+  }
+
+  .section-white, .section-color{
+    padding: 2rem;
+    }
+
+}

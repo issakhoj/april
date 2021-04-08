@@ -1,0 +1,45 @@
+/* Navbar #eb5e0b #eb5e0b #eb5e0b #eb5e0b */
+.navcon {
+  display: flex;
+  background-color: #a3d2ca;
+  padding: 5px 15px 5px;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 8vh;
+  align-items: center;
+  border-bottom: 5px solid #eb5e0b;
+  position: fixed;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navcondiv2 {
+  margin-right: 2rem;
+}
+
+.navcondiv1 {
+  margin-left: 2rem;
+}
+
+.navli {
+  display: inline;
+  padding: 5px;
+}
+
+.nava {
+  padding: 3px;
+  text-decoration: none;
+  color: #557174;
+  font-weight: bold;
+}
+
+.nava:hover {
+  color: #214151;
+}
+
+.navimg {
+  width: 50px;
+  padding-left: 20px;
+}

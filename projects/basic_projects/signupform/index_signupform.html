@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="/projects/basic_projects/signupform/styles_form.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <!-- SCRIPTS ANF AJAX -->
+  <script type="text/javascript" src="https://ajax.cloudflare.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="jquery-3.5.1.min.js"></script>
+
+</head>
+
+<body>
+
+  <main class="main-container">
+    <div class="col1">
+    </div>
+    <div class="col2">
+      <h2>Booking place for your dinner!</h2>
+      <div class="name form-group form-input">
+        <input type="text" name="name" id="name" value required>
+        <label for="name" class="form-label">Your name</label>
+      </div>
+      <div class="number form-group form-input">
+        <input type="number" name="phone" id="phone" value required>
+        <label for="phone" class="form-label">Your phone number</label>
+      </div>
+
+      <div class="time form-group form-input">
+        <input type="datetime-local" name="time" id="time" value required>
+        <label for="time" class="form-label"></label>
+      </div>
+
+      <div class="form-group">
+        <div class="select-list">
+          <select name="food" id="food" required>
+            <option value="seasonalfish">Seasonal steamed fish</option>
+            <option value="assortedmushrooms">Assorted mushrooms</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-radio">
+        <label class="label-radio"> Select Your Dining Space</label>
+        <div class="radio-item-list">
+          <span class="radio-item n2">
+            <input type="radio" name="number_people" value="2" id="number_people_2" />
+            <label for="number_people_2">2</label>
+          </span>
+          <span class="radio-item n4">
+            <input type="radio" name="number_people" value="4" id="number_people_4" />
+            <label for="number_people_4">4</label>
+          </span>
+          <span class="radio-item n6 active">
+            <input type="radio" name="number_people" value="6" id="number_people_6" checked="checked" />
+            <label for="number_people_6">6</label>
+          </span>
+          <span class="radio-item n8">
+            <input type="radio" name="number_people" value="8" id="number_people_8" />
+            <label for="number_people_8">8</label>
+          </span>
+          <span class="radio-item n10">
+            <input type="radio" name="number_people" value="10" id="number_people_10" />
+            <label for="number_people_10">10</label>
+          </span>
+        </div>
+        <br>
+        <div class="btn-submit form-submit">
+          <button class="btn" type="button" name="button">Book Now</button>
+          <a href="#" class="vertify-booking">Verify your booking info from your phone</a>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+  <!-- Copyright note -->
+  <p>Note: Original idea is <a href="https://colorlib.com/etc/regform/colorlib-regform-13/" target="_blank">here</a> </p>
+
+
+  <script>
+    $(document).ready(function() {
+      $('#number_people_2').click(function() {
+        $('.n2').addClass('active').siblings().removeClass('active');
+      });
+      $('#number_people_4').click(function() {
+        $('.n4').addClass('active').siblings().removeClass('active');
+      });
+      $('#number_people_6').click(function() {
+        $('.n6').addClass('active').siblings().removeClass('active');
+      });
+      $('#number_people_8').click(function() {
+        $('.n8').addClass('active').siblings().removeClass('active');
+      });
+      $('#number_people_10').click(function() {
+        $('.n10').addClass('active').siblings().removeClass('active');
+      });
+    });
+  </script>
+
+</body>
+
+
+
+
+</html>

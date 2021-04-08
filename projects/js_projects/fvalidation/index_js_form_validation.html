@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Form Validation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Styles CSS -->
+  <link rel="stylesheet" href="/projects/js_projects/fvalidation/styles_js_form_validation.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="title">
+      <h1>Form Validation</h1>
+    </div>
+    <div class="input">
+      <div class="form-input">
+        <input type="text" name="username" id="username" placeholder="username">
+        <small id="username_error" class="hide">Username should be at least 8 letters long!</small><br>
+
+        <input type="email" name="email" id="email"   placeholder="email">
+        <small id="email_error" class="hide">Please enter a valid email address!</small><br>
+
+
+        <input type="password" name="password" id="password"   placeholder="password">
+        <small id="password_error"class="hide">Your password should be at least 8 letters long and include $ symbol!</small><br>
+
+        <input type="password" name="confirmpassword" id="confirmpassword"   placeholder="confirm password">
+        <small id="confirmpassword_error"class="hide">Your password did not match!</small><br>
+
+      </div>
+
+    </div>
+
+    <button type="button" name="button" onclick="validate()">submit</button>
+
+  </div>
+
+
+</body>
+
+<script src="/projects/js_projects/fvalidation/index_js_form_validation.js" charset="utf-8"></script>
+
+</html>
