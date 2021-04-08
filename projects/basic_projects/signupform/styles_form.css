@@ -35,7 +35,7 @@ option {
 .col1 {
   width: 600px;
   height: 600px;
-  background-image: url("/projects/basic_projects/signupform/images/form.jpg");
+  background-image: url("images/form.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px 0 0 15px;

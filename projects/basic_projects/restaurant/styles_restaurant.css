@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 65px 50px 0;
   box-sizing: border-box;
-  background-image: url("/projects/basic_projects/restaurant/images/topography.svg");
+  background-image: url("images/topography.svg");
   background-repeat: repeat;
   background-size: contain;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -58,7 +58,7 @@ button {
 .col1 {
   grid-area: 1/1/2/3;
   background-color: white;
-  background-image: url("/projects/basic_projects/restaurant/images/taco.jpg");
+  background-image: url("images/taco.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;

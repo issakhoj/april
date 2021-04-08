@@ -71,7 +71,7 @@ input:focus {
 
 .title {
   min-height: 190px;
-  background-image: url("/projects/js_projects/todolist/images/todo1.jpg");
+  background-image: url("images/todo1.jpg");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -294,7 +294,7 @@ li:hover {
   height: 20px;
   margin-left: 20px;
   vertical-align: middle;
-  background-image: url("/projects/js_projects/todolist/images/trash.png");
+  background-image: url("images/trash.png");
   background-size: contain;
   background-repeat: no-repeat;
   display: none;
